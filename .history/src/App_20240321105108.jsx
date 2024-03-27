@@ -1,25 +1,13 @@
-import React from 'react';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import CreatePage from './pages/CreatePage';
-import DisplayPage from './pages/DisplayPage';
-import UpdatePage from './pages/UpdatePage';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Router>
-      <Switch>
-        <Route path="/" exact component={DisplayPage} />
-        <Route path="/create" component={CreatePage} />
-        <Route path="/update/:id" component={UpdatePage} />
-      </Switch>
-    </Router>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

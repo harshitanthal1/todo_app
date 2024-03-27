@@ -13,13 +13,6 @@ function App() {
 
   return (
     <>
-    <Router>
-      <Switch>
-        <Route path="/" exact component={DisplayPage} />
-        <Route path="/create" component={CreatePage} />
-        <Route path="/update/:id" component={UpdatePage} />
-      </Switch>
-    </Router>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
